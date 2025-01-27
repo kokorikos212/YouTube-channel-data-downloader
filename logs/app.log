@@ -1,0 +1,40 @@
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - File: /home/thinpan/miniconda3/lib/python3.11/site-packages/werkzeug/_internal.py - Func: _log - Line: 97 
+werkzeug - INFO - [33mPress CTRL+C to quit[0m - File: /home/thinpan/miniconda3/lib/python3.11/site-packages/werkzeug/_internal.py - Func: _log - Line: 97 
+werkzeug - INFO -  * Restarting with watchdog (inotify) - File: /home/thinpan/miniconda3/lib/python3.11/site-packages/werkzeug/_internal.py - Func: _log - Line: 97 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+werkzeug - WARNING -  * Debugger is active! - File: /home/thinpan/miniconda3/lib/python3.11/site-packages/werkzeug/_internal.py - Func: _log - Line: 97 
+werkzeug - INFO -  * Debugger PIN: 799-004-613 - File: /home/thinpan/miniconda3/lib/python3.11/site-packages/werkzeug/_internal.py - Func: _log - Line: 97 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000 - File: /home/thinpan/.local/lib/python3.10/site-packages/werkzeug/_internal.py - Func: _log - Line: 187 
+werkzeug - INFO - [33mPress CTRL+C to quit[0m - File: /home/thinpan/.local/lib/python3.10/site-packages/werkzeug/_internal.py - Func: _log - Line: 187 
+werkzeug - INFO -  * Restarting with watchdog (inotify) - File: /home/thinpan/.local/lib/python3.10/site-packages/werkzeug/_internal.py - Func: _log - Line: 187 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+werkzeug - WARNING -  * Debugger is active! - File: /home/thinpan/.local/lib/python3.10/site-packages/werkzeug/_internal.py - Func: _log - Line: 187 
+werkzeug - INFO -  * Debugger PIN: 298-758-005 - File: /home/thinpan/.local/lib/python3.10/site-packages/werkzeug/_internal.py - Func: _log - Line: 187 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+root - WARNING - YouTube API key is missing in environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 44 
+root - WARNING - Database path is missing in environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 46 
+root - WARNING - Proxy file path is missing in environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 48 
+root - WARNING - YouTube channel IDs are missing in environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 50 
+root - INFO - Loaded configuration data from environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 53 
+root - ERROR - An error occurred: 'NoneType' object has no attribute 'db_filename' - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__main__.py - Func: statntart_init - Line: 56 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+root - INFO - Loaded configuration data from environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 52 
+root - ERROR - An error occurred during configuration: unable to open database file - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 64 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+root - INFO - Loaded configuration data from environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 52 
+root - ERROR - An error occurred during configuration: unable to open database file - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 64 
+root - INFO - Logging configuration setup complete. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 42 
+root - INFO - Application started. Log level set to: INFO - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/logging_config.py - Func: logging_configuration - Line: 45 
+root - INFO - Loaded configuration data from environment variables. - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 52 
+root - ERROR - An error occurred during configuration: unable to open database file - File: /home/thinpan/Desktop/py/portfolio_proj/Political/yt_engine_root/src/Engine/__init__.py - Func: basic_config - Line: 64 
