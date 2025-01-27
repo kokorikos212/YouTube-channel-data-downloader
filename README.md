@@ -74,6 +74,19 @@ This app leverages the **YouTube Data API v3** to download detailed information 
 - **Python 3.x** (recommended).
 - A running **SQL database** (e.g., SQLite, MySQL, or PostgreSQL).
 
+## Configuration (`StandartInput.json`)
+
+To run the application, you must configure the `StandartInput.json` file located in the `data` folder. This file contains your YouTube API key, the database path, and the YouTube channel IDs to track.
+
+### Example `StandartInput.json`:
+
+json:
+{
+  "api_key": "YOUR_YOUTUBE_API_KEY",      
+  "database_path": "../db/SQL/test.db",
+  "yt_channel_ids": ["CHANNEL_ID_1", "CHANNEL_ID_2"]
+}
+
 ## Additional Features (Future Updates):
 
 - Ability to download data for multiple channels simultaneously.
