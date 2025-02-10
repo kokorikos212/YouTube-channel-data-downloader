@@ -1,63 +1,77 @@
-import os, sys, json
+import os
+import sys
+import json
 import logging
-from class_create_Database import Database
-
 from dotenv import load_dotenv
+
+# necessary classes and functions
+from class_create_Database import Database
+from class_YoutubeApiClient import YouTubeAPIClient
+from class_YouTubePlaylist import YouTubePlaylist
+from class_Save_data import DataSaver
+from logging_config import logging_configuration
+from utils import *
+
+# Load environment variables
 load_dotenv()
 
+# Initialize logging
+logging_configuration()
+
 def basic_config(standart_input_path="../data/StandartInput.json"):
-    """Loads configuration from a JSON file and sets up logging.
+    """Loads configuration from a JSON file and initializes the database.
 
     Returns:
-        tuple: A tuple containing the YouTube API key, database name,
-               proxy file path, and YouTube channel IDs.
+        tuple: A tuple containing the YouTube API key list, database manager instance,
+               and YouTube channel IDs.
     """
-    print("__basic_config__")
-    print() 
+    print("__basic_config__\n")
+
     youtube_api_key = []
     database_manager = None  
-    proxy_file_path = None
- 
-    try:
-        # Load environment variables from .env file
-        # youtube_api_key = os.getenv("API_KEY", "").split("," )
-        # database_path = os.getenv("DATABASE_PATH")
-        # yt_channel_ids = os.getenv("YT_CHANNEL_IDS", "").split(",")
 
+    try:
+        # Construct the file path
         file_path = os.path.join(os.path.dirname(__file__), standart_input_path)
+
+        # Load the JSON config file
         with open(file_path, 'r') as file:
             config = json.load(file)
-            youtube_api_key = config["api_key"]
-            database_path = config["database_path"]
-            yt_channel_ids = config["yt_channel_ids"]
-        
+            youtube_api_key = config.get("api_key", [])
+            database_path = config.get("database_path", "")
+            yt_channel_ids = config.get("yt_channel_ids", [])
 
-        # Print the extracted configuration values
-        print(f"API Key: {youtube_api_key}\nDatabase Name: {database_path}\nProxy File Path: {proxy_file_path}\nYouTube Channel IDs: {yt_channel_ids}")
+        # Print extracted config values
+        print(f"API Key: {youtube_api_key}\nDatabase Name: {database_path}\nYouTube Channel IDs: {yt_channel_ids}")
 
-        # Check essential values
+        # Validate critical configurations
         if not youtube_api_key:
-            logging.warning("YouTube API key is missing in environment variables.")
+            logging.warning("YouTube API key is missing in configuration.")
         if not database_path:
-            logging.warning("Database path is missing in environment variables.")
-        if not yt_channel_ids or yt_channel_ids == ['']:  # Check for empty list
-            logging.warning("YouTube channel IDs are missing in environment variables.")
-        
-        # Log the loaded configuration values
-        logging.info("Loaded configuration data from environment variables.")
+            logging.warning("Database path is missing in configuration.")
+        if not yt_channel_ids:
+            logging.warning("YouTube channel IDs are missing in configuration.")
 
         # Initialize database
         if database_path:
             database_manager = Database(database_path)
+            logging.info(f"Database '{database_path}' initialized successfully.")
 
-            logging.info(f"Database '{database_path}' created successfully.")
-
-        # Return the loaded configuration values
         return youtube_api_key, database_manager, yt_channel_ids
 
     except Exception as e:
         logging.error(f"An error occurred during configuration: {e}")
-        sys.exit(1)  
+        sys.exit(1)
 
-# youtube_api_key, database_manager, yt_channel_ids = basic_config()  
-# print(youtube_api_key, database_manager, yt_channel_ids) 
+# Expose important elements when importing `__init__`
+__all__ = [
+    "basic_config",
+    "YouTubeAPIClient",
+    "YouTubePlaylist",
+    "DataSaver",
+    "Database",
+    "logging_configuration",
+    "sys",
+    "logging",
+    "json",
+]

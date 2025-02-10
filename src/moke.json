@@ -1,0 +1,60 @@
+{
+  "channels": [
+    {
+      "channelId": "UCC5GG5tZf0APYlBbzup9J9A",
+      "title": "Sample Channel 1",
+      "description": "This is a mock channel for testing.",
+      "published_at": "2015-06-10T12:00:00Z",
+      "video_count": 150,
+      "subscribers_count": 50000,
+      "view_count": 1200000,
+      "playlists": [
+        {
+          "playlistId": "PL1234567890abcdef",
+          "title": "Sample Playlist 1",
+          "video_count": 10
+        }
+      ],
+      "video_ids": ["a-2x58i1P8c", "Y0FHU9qGeI0"]
+    }
+  ],
+  "videos": [
+    {
+      "video_youtube_id": "a-2x58i1P8c",
+      "title": "Mock Video 1",
+      "description": "This is a mock video description.",
+      "publish_date": "2024-01-15T08:00:00Z",
+      "duration_seconds": 300,
+      "statistics": {
+        "viewCount": 10000,
+        "likeCount": 500,
+        "commentCount": 50
+      },
+      "comments": [
+        {
+          "text": "Great video!",
+          "likeCount": 10,
+          "total_replies": 2,
+          "replies": [
+            {"text": "Thanks!"},
+            {"text": "Glad you liked it!"}
+          ]
+        }
+      ]
+    },
+    {
+      "video_youtube_id": "Y0FHU9qGeI0",
+      "title": "Mock Video 2",
+      "description": "Another mock video.",
+      "publish_date": "2024-02-01T10:30:00Z",
+      "duration_seconds": 450,
+      "statistics": {
+        "viewCount": 20000,
+        "likeCount": 800,
+        "commentCount": 100
+      },
+      "comments": []
+    }
+  ]
+}
+
